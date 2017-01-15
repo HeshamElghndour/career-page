@@ -1,0 +1,52 @@
+.padding {
+	&-t0 {
+		padding-top: 0;
+	}
+	&-b0 {
+		padding-bottom: 0;
+	}
+	&-l0 {
+		padding-left: 0;
+	}
+	&-r0 {
+		padding-right: 0;
+	}
+	&-t50 {
+		padding-top: 50px;
+	}
+	&-b50 {
+		padding-bottom: 50px;
+	}
+	&-l50 {
+		padding-left: 50px;
+	}
+	&-r50 {
+		padding-right: 50px;
+	}
+}
+.margin {
+	&-t0 {
+		margin-top: 0;
+	}
+	&-b0 {
+		margin-bottom: 0;
+	}
+	&-l0 {
+		margin-left: 0;
+	}
+	&-r0 {
+		margin-right: 0;
+	}
+	&-t50 {
+		margin-top: 50px;
+	}
+	&-b50 {
+		margin-bottom: 50px;
+	}
+	&-l50 {
+		margin-left: 50px;
+	}
+	&-r50 {
+		margin-right: 50px;
+	}
+}

@@ -1,0 +1,261 @@
+body, html {
+	font-size : @font-size-base;
+}
+
+p {
+	font-size : @font-size-base;
+}
+
+h1, .h1 {
+	font-size: @font-size-h1-sm;
+}
+
+h2, .h2 {
+	font-size: @font-size-h2-sm;
+}
+
+h3, .h3 {
+	font-size: @font-size-h3-sm;
+}
+
+h4, .h4 {
+	font-size: @font-size-h4-sm;
+}
+
+h5, .h5 {
+	font-size: @font-size-h5-sm;
+}
+
+h6, .h6 {
+	font-size: @font-size-h6-sm;
+}
+
+section {
+	padding: @section-padding-sm;
+}
+
+.wd__Nav--Mobile {
+	nav.navbar-collapse {
+		ul.navbar-nav {
+			padding: 90px @padding-lg @padding-lg @padding-lg;
+			margin-left: auto;
+			margin-right: auto;
+			width: @container-sm;
+		}
+	}
+}
+
+.wd__sliderFontColorLight {
+	background : @color-white;
+	color      : @color-grey-blue-two;
+	h1, .h1, 
+	h2, .h2, 
+	h3, .h3, 
+	h4, .h4,
+	h6, .h6 {
+		color  : @color-white;
+	}
+	.wd__intro {
+		color  : @color-grey-blue-one;
+	}
+	a {
+		color  : @color-grey-blue-two;
+	}
+	a.btn {
+		color  : @color-white;
+		&.wd__buttonBorderBlue {
+			color: @color-blue-dark;
+			&:hover {
+				color: @color-white;
+			}
+		}
+	}
+}
+
+.wd__MetaWrapper {
+	.wd__MetaNav, .wd__Login {
+		ul li a {
+			font-size: 14px;
+		}
+	}
+	.wd__Login {
+		ul {
+			li {
+				margin: 0 0 0 @padding-base;
+				padding: 0;
+				a {
+					padding: 20px @padding-base @padding-xs;
+				}
+			}
+		}
+	}
+}
+
+.wd__intro {
+	font-size: @intro-font-size-sm;
+	line-height: @intro-line-height-sm;
+}
+
+.wd__contentSliderModule, 
+.wd__partnerSliderModule {
+	.wd__contentSliderContent {
+		.wd__contentSliderContentInner {
+			padding: @padding-xlg;
+		}
+	}
+}
+
+.wd__stageSliderModule {
+	.slider {
+		.slide {
+			min-height: 500px;
+			&.tall {
+				min-height: 350px;
+			}
+		}
+	}
+}
+
+.wd__contentSliderModule {
+	.wd__contentSliderWrapper {
+		.wd__iosslider {
+			padding-top: 0px;
+		}
+		.wd__previousSlide, .wd__nextSlide {
+			top: 42%;
+		}
+		.wd__previousSlide {
+			left: -25px;
+		}
+		.wd__nextSlide {
+			right: -25px;
+		}
+		.wd__iossliderBullets {
+			top: auto;
+			bottom: -10px;
+		}
+	}
+}
+
+.wd__imageSliderModule {
+	padding: 0 @padding-xlg;
+	&.container-fluid {
+		padding: 0;
+	}
+	.wd__contentSliderContent {
+		position: absolute;
+		top: 0;
+	}
+	.wd__iossliderBullets {
+		top: auto;
+		bottom: 20px;
+	}
+	.wd__contentSliderContent {
+		&.middle {
+			.wd__contentSliderContentInner {
+				position: absolute;
+				padding: 0;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.wd__partnerSliderModule {
+	.wd__intro {
+		margin: 0;
+	}
+}
+
+.formElement {
+	&.grid__unit {
+		width: 50%;
+	}
+	&.grid__unit--full {
+		width: 100%;
+	}
+}
+
+.wd__stageFormWrapper {
+	.wd__stageForm {
+		padding: @padding-lg;
+		form {
+			.formElement {
+				margin: 0 0 @padding-base 0;
+			}
+		}
+	}
+}
+
+.wd__responsiveTabs {
+	.r-tabs-nav a {
+		background      : transparent;
+		font-size       : @font-size-base;
+		color           : @color-grey-blue-one;
+		border-top      : 1px solid @color-grey-blue-two;
+		text-decoration : none;
+		padding         : @padding-base;
+		margin          : 0 -@padding-base;
+		display         : block;
+		&:hover, &:focus {
+			background  : @color-grey-blue-two;
+		}
+	}
+	.r-tabs-tab.r-tabs-state-active a {
+		background    : @color-grey-blue-two;
+		color         : @color-red;
+		border-bottom : none;
+	}
+	.r-tabs-tab.r-tabs-state-active a:hover, .r-tabs-tab.r-tabs-state-active a:focus {
+		background : @color-grey-blue-two;
+		color      : @color-red;
+	}
+}
+
+.wd__sectionBackgroundMid {
+	.wd__responsiveTabs {
+		.r-tabs-nav a {
+			background      : transparent;
+			border-top      : 1px solid @color-grey-blue-one;			
+			&:hover, &:focus {
+				background  : @color-grey-black;
+			}
+		}
+		.r-tabs-tab.r-tabs-state-active a, 
+		.r-tabs-tab.r-tabs-state-active a:focus {
+			background    : @color-grey-dark-two;
+		}
+		.r-tabs-tab.r-tabs-state-active a:hover {
+			background : @color-grey-black;
+		}
+	}
+}
+
+.wd__responsiveTabs {
+	.r-tabs-accordion-title:first-child a, 
+	.r-tabs-tab:first-child a {
+		border-top: none;
+	}
+}
+
+.form-builder span.h4 {
+	font-size: @intro-font-size-sm;
+}
+
+.wd__DocumentDownloads {
+	.wd__DocumentDownloads--Item {
+		.media-object {
+			
+		}
+	}
+}
+
+
+footer {
+	ul {
+		margin: 0;
+	}
+	.wd__footerBrand {
+		text-align: right;
+	}
+}

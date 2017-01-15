@@ -1,0 +1,40 @@
+.postident_form {
+	.error-message {
+		font-size: $font-size-xs;
+		color: $color-red;
+	}
+	.form-control {
+		&.error {
+			margin-bottom: 5px;
+			border: 1px solid $color-red;
+		}
+	}
+	.form-group.submit .btn {
+		padding: 5px 18px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+.postident_form {
+	.form-group.submit {
+		text-align: right;
+	}
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+
+
+}

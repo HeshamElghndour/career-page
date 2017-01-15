@@ -1,0 +1,32 @@
+/*** PRINT ***/
+header,
+footer,
+.btn--arrow,
+.feature--slide__nav,
+.video-modul,
+.tabs__nav, 
+.feature--home,
+.js_stage-slide, 
+.js_stage-image-slide, 
+.js_stage-video-slide, 
+.js_stage-content-slide, 
+.crumb, 
+a.logo,
+.feature {
+	display:none !important;
+}
+.gap {
+	border-top:0;
+}
+.js_image-text-slide .iosSlider {
+	min-height: 550px !important;
+}
+.inner {
+	padding:0;
+}
+
+img.print_logo {
+	display: block !important;
+	text-align: left;
+	margin: 30px 0;
+}

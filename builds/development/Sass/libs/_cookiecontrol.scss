@@ -1,0 +1,55 @@
+#cookie_info {
+	position: relative;
+	z-index: 99;
+	background-color:$color-blue-black;
+	color: $color-white;
+	padding:$padding-base 0;
+	font-size: $font-size-xs;
+	*zoom: 1;
+	a {
+		color: $color-white;
+	}
+	&:after, &:before {
+		content: " ";
+    	display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	.text {
+		float:left;
+		padding-top:0.2em;
+	}
+	.cookie_info_button {
+		float:right;
+		padding: 2px $padding-base 0;
+		border:0;
+		background-color: $color-white;
+		color: $color-blue-black;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+#cookie_info {
+	.text {
+		max-width: 85%;
+	}
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+
+
+}

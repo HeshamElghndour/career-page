@@ -1,0 +1,86 @@
+.wd__mod-product {
+	padding-top: 0;
+	.image {
+		height: auto;
+		padding: 150px 0;
+		.item {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;			
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			display: none;
+			&.selected {
+				display: block;
+			}
+		}
+	}
+	.place {
+		padding-top: $padding-lg;
+		padding-bottom: $padding-lg;
+	}
+	.wd__iosslider {
+		.slider {
+			.slide {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.wd__mod-product {	
+	.sliderNav {
+		margin: 0 0 $padding-base 0;
+		.slideSelector {
+			display: inline-block;
+			width: 30px;
+			height: 2px;
+			margin: 0 1px;
+			background: $color-grey-blue-two;
+			&.selected, &:hover {
+				background: $color-red;
+			}
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+.wd__mod-product {
+	.image {
+		height: 500px;
+	}
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+.wd__mod-product {
+	.image {
+		height: 600px;
+	}
+	.place {
+		padding-left: $padding-lg;
+		padding-right: $padding-lg;
+	}
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+.wd__mod-product {
+	.place {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+
+}

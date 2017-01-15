@@ -1,0 +1,14 @@
+{
+  "name": "wirecard",
+  "version": "1.0.0",
+  "authors": [
+    "Stephan Wergles"
+  ],
+  "description": "Dependencies for wirecard project",
+  "license": "MIT",
+  "homepage": "www.synergy-solutions.de",
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.4"
+  }
+}

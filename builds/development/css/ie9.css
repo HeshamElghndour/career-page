@@ -1,0 +1,20 @@
+/* 
+    STYLING for IE9 ONLY
+*/
+.two-col-feature__typo--top span {
+	line-height:1.3em;
+}
+/*a.heading--arrow:after {
+	margin-top:0.25em;
+}*/
+
+
+.expanding-list--headline:after {
+	top: 0.36em;
+}	
+.expanding-list--headline.active:after{
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);	
+	margin: 0 0.12em 0 1em;
+}

@@ -1,0 +1,329 @@
+/** FONT-FACES **/
+@font-face {
+font-family: "ff-din-web";
+src: url("../fonts/DINWebPro.eot");
+src: url("../fonts/DINWebPro.eot?#iefix") format("embedded-opentype"),
+url("../fonts/DINWebPro.woff") format("woff"),
+url('../fonts/DINWebPro.ttf') format('truetype');
+}
+@font-face {
+font-family: "ff-din-web";
+font-weight: 700;
+src: url("../fonts/DINWebPro.eot");
+src: url("../fonts/DINWebPro-Bold.eot?#iefix") format("embedded-opentype"),
+url("../fonts/DINWebPro-Bold.woff") format("woff"),
+url('../fonts/DINWebPro-Bold.ttf') format('truetype');
+}
+@font-face {
+font-family: "ff-din-web";
+font-style: italic;
+src: url("../fonts/DINWebPro.eot");
+src: url("../fonts/DINWebPro-Ita.eot?#iefix") format("embedded-opentype"),
+url("../fonts/DINWebPro-Ita.woff") format("woff");
+}
+
+
+.wd__stageSliderModule .slider .slide{
+	min-height: 675px;
+}
+.career-header{
+	text-align: center;
+	.video_bg{
+		video{
+			width: 100%;
+
+		}
+		.video-overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
+	}
+	.header-slide{
+		h1{
+			font-size: 70px;
+			text-transform: inherit;
+			margin: 80px 0 40px 0;
+		}
+		p{
+			font-size: 22px;
+		}
+	}
+}
+.departments, .intro-txt{
+
+	background-color: $color-grey-light;
+}
+.intro-txt{
+	text-align: center;
+
+}
+.careers-page{
+	section{
+		padding: 80px 0;
+		position: relative;
+		&.video{
+			background-color: $color-grey-light;
+		}
+	}
+
+	figure.card{
+		padding: 0 10px;
+		margin-bottom: 20px;
+		a{
+			text-decoration: none;
+		}
+		h2{
+			text-decoration: none;
+			box-sizing: inherit;
+			 transition-property: all;
+			 transition-duration: .6s;
+			 transition-timing-function: ease;
+			letter-spacing: 0;
+			.btn-2 {
+			}
+
+			&:hover,
+			&:active {
+			  letter-spacing: 5px;
+			}
+
+			&:after,
+			&:before {
+			  backface-visibility: hidden;
+			  border: 1px solid rgba(#fff, 0);
+			  bottom: 0px;
+			  content: " ";
+			  display: block;
+			  margin: 0 auto;
+			  position: relative;
+			  transition: all 280ms ease-in-out;
+			  width: 0;
+			}
+
+			&:hover:after,
+			&:hover:before {
+			  backface-visibility: hidden;
+			  border-color: #fff;
+			  transition: width 350ms ease-in-out;
+			  width: 70%;
+			}
+
+			&:hover:before {
+			  bottom: auto;
+			  top: 0;
+			  width: 70%;
+			}
+
+			/////////////////////////////
+		}
+	}
+	figure .card-content{
+		width: 100%;
+    height: 214px;
+    float: left;
+    background-size: cover !important;
+    display: table;
+    position: relative;
+		// loop for each dep tile setting bg
+		$departments: marketing it sales customer adminstration students dep1 dep2;
+		@each $a in $departments{
+			&.dep-#{$a}{
+				background: url('../images/#{$a}_tile_bg.jpg');
+			}
+	  }
+		h2{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			display: table-cell;
+	    vertical-align: middle;
+			z-index: 1;
+	    position: relative;
+			font-size: 22px;
+		}
+		.gradient{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			transition: all 0.6s ease;
+		}
+		&.dep-marketing .gradient{
+			background-image: linear-gradient(146deg, #DFB36C 12%, rgba(223,178,107,0.50) 88%);
+
+		}
+		&.dep-it .gradient{
+			background-image: linear-gradient(137deg, #607A87 6%, rgba(95,121,135,0.50) 80%);
+		}
+		&.dep-sales .gradient{
+			background-image: linear-gradient(142deg, #14AF96 0%, rgba(19,175,150,0.50) 100%);
+		}
+		&.dep-adminstration .gradient{
+			background-image: linear-gradient(to bottom right, rgba(4,43,75,0.99) 0%, rgba(4,43,75,0.50) 80%);
+		}
+		&.dep-students .gradient{
+		  background-image: -webkit-linear-gradient(50deg, #8DC8E8 0%, rgba(141,200,232,0.50) 83%);
+		}
+		&.dep-customer .gradient{
+			/* Bitmap: */
+			// opacity: 0.91;
+			background-image: linear-gradient(-138deg, #F15238 0%, rgba(241,82,55,0.50) 73%);
+		}
+		&.dep-sales .gradient{
+				background-image: linear-gradient(142deg, #14AF96 0%, rgba(19,175,150,0.50) 100%);
+		}
+		&.dep-dep1 .gradient{
+			/* shutterstock_526629694 copy: */
+      background-image: linear-gradient(-137deg, #730F5F 0%, rgba(115,15,94,0.54) 100%);
+		}
+		&.dep-dep2 .gradient{
+			background-image: linear-gradient(39deg, rgba(120,9,9,0.50) 25%, rgba(120,9,9,0.86) 100%);
+		}
+	}
+
+	.events{
+		.event-card{
+			&:hover{
+		    background: #F7F7F8;
+			}
+		}
+		a {
+		    text-decoration: none;
+		}
+		.event-photo{
+			margin: 0 0 15px 0;
+			width: 100%;
+		}
+		h4{
+			font-size: 20px;
+			margin-bottom: 10px;
+			color: #4A4A4A;
+		}
+		a{
+			display: inline-block;
+		}
+		span.date{
+			display: inline-block;
+			font-size: 14px;
+			color: #4A4A4A;
+			margin-bottom: 10px;
+		}
+	}
+
+	.newsletters{
+		background: url('../images/newsletters-bg.jpg') no-repeat;
+		background-size: cover;
+
+		h1, h1 a{
+			text-transform: inherit;
+			color:#fff;
+			a, a:hover{
+				text-decoration: underline;
+				font-weight: bold;
+			}
+		}
+
+	}
+
+	.social-hr{
+		background-color: $color-grey-light;
+		padding: 60px 0;
+		a{
+			text-decoration: none;
+		}
+		*{
+			// color: #fff;
+			text-transform: inherit;
+		}
+
+
+	}
+
+	.hr-team{
+		padding: 0 !important;
+	}
+	footer{
+
+	}
+	.jvectormap-tip{
+		background-color: #F9F9F9;
+		color: #231F20;
+		padding: 0;
+		.swiper-button-prev, .swiper-button-next{
+			background: none !important;
+		}
+		.swiper-button-prev:after, .swiper-button-next:after{
+			content: " ";
+			position: absolute;
+			width: 1em;
+			height: 1em;
+			border-left: 2px solid #052C4B;
+			border-bottom: 2px solid #052C4B;
+		}
+		.swiper-button-prev:after{
+			transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+		}
+		.swiper-button-next:after{
+			transform: rotate(-45deg);
+	    -moz-transform: rotate(-45deg);
+	    -webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+			border-left: 0;
+    	border-right: 2px solid #052C4B;
+		}
+		img{
+			margin-right: 10px;
+		}
+		address{
+			font-size: 13px;
+		}
+		.swiper-container {
+      width: 465px;
+      height: 166px;
+      margin: 20px auto;
+    }
+
+
+	    .swiper-slide {
+	        text-align: left;
+	        font-size: 18px;
+					padding: 0 30px;
+					button{
+						font-size: 13px;
+						padding: 10px 12px;
+					}
+	    }
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

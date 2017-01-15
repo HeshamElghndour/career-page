@@ -1,0 +1,516 @@
+/* New Navigation */
+
+@font-face {
+	font-family: 'wirecard-nav';
+	src:url('../Fonts/wirecard-nav.eot?d3djpt');
+	src:url('../Fonts/wirecard-nav.eot?#iefixd3djpt') format('embedded-opentype'),
+		url('../Fonts/wirecard-nav.woff?d3djpt') format('woff'),
+		url('../Fonts/wirecard-nav.ttf?d3djpt') format('truetype'),
+		url('../Fonts/wirecard-nav.svg?d3djpt#wirecard-nav') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="nav-icon-"], [class*=" nav-icon-"] {
+	font-family: 'wirecard-nav';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.nav-icon-menu:before {
+	content: "\e608";
+}
+
+.nav-icon-close:before {
+	content: "\e605";
+}
+
+.nav-icon-arrow-left:before {
+	content: "\e606";
+}
+
+.nav-icon-arrow-right:before {
+	content: "\e607";
+}
+
+.nav-icon-communication:before {
+	content: "\e600";
+}
+
+.nav-icon-risk:before {
+	content: "\e601";
+}
+
+.nav-icon-card:before {
+	content: "\e602";
+}
+
+.nav-icon-issuing:before {
+	content: "\e603";
+}
+
+.nav-icon-mobile:before {
+	content: "\e604";
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body.overflow-hidden {
+	overflow-x: hidden;
+}
+
+a.logo {
+	margin-bottom: 15px;
+}
+
+.nav-icon-menu {
+	color: $color-white;
+	margin: auto;
+	height: 26px;
+	font-size: 26px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.wd-nav-bg {
+	background: rgba(0,0,0,.7);
+	position: fixed;
+	z-index: 3;
+	display: none;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.nav-icon-close.mobile {
+	display: block;
+	font-size: 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 38px;
+	z-index: 15;
+	background-color: $color-grey-light;
+	color: $color-blue-black;
+}
+
+/*@media (min-width: 600px) {
+
+.nav-icon-close.mobile {
+	display: block;
+}
+
+}*/
+
+.nav-icon-close.desktop {
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	right: 0px;
+	top: 15px;
+	color: $color-white;
+}
+
+#nav-mobile {
+	/*display: none;*/
+	background: $color-grey-light;
+	position: fixed;
+	z-index: 2000;
+	color: $color-blue-black;
+	top: 68px;
+	width: 95%;
+	right: 0;
+	min-height: 500px;
+	font-size: 0.875em;
+	-webkit-backface-visibility: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+
+	transform: translate(100%, 0);
+	-webkit-transform: translate(100%, 0);
+	-moz-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	-ms-transform: translate(100%, 0);
+	-o-transform: translate(100%, 0);
+	
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	-ms-transition: -ms-transform 500ms ease;
+	-o-transition: -o-transform 500ms ease;
+	transition: transform 500ms ease;
+}
+
+#nav-mobile.open {
+	position: absolute;
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	
+	box-shadow: 0px 0px 20px rgba(2, 15, 27,0.15)
+}
+
+#nav-mobile span.back {
+	cursor: pointer;
+	margin-left: 25px;
+	padding-left: 20px;
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+}
+
+#nav-mobile span.back:hover {
+	color: $color-red;
+}
+
+#nav-mobile span.back:before {
+	content: "\e606";
+	position: absolute;
+	left: 0;
+	font-size: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+	font-family: 'wirecard-nav';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#nav-mobile ul.wd-nav-02 a.title {
+	font-weight: $font-weight-bold;
+}
+
+#nav-mobile .wd-nav-01 {
+	padding: 80px 0 15px 0;
+	margin: 0;
+	left: 0;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	font-size: 1em;
+}
+
+#nav-mobile .wd-nav-01 li {
+	border-bottom: 1px solid #E8E9E9;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+#nav-mobile li:last-child {
+	border-bottom: none;
+}
+
+#nav-mobile .wd-nav-01 li a {
+	color: $color-blue-black;
+	padding: 15px 30px;
+	display: block;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+}
+
+#nav-mobile .wd-nav-01 li a:hover, #nav-mobile .wd-nav-01 li.active {
+	background: #E8E9E9;
+}
+
+#nav-mobile .wd-nav-01 li.sub > a:after {
+	content: "\e607";
+	position: absolute;
+	right: 15px;
+	font-size: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+
+	font-family: 'wirecard-nav';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#nav-mobile .wd-nav-02 {
+	display: none;
+	list-style: none;
+	position: absolute;
+	margin: 0;
+	padding: 80px 0 15px 0;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+#nav-mobile .wd-nav-03 {
+	display: none;
+	list-style: none;
+	position: absolute;
+	margin: 0;
+	padding: 80px 0 15px 0;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+#nav-mobile .wd-nav-04 {
+	display: none;
+	list-style: none;
+	position: absolute;
+	margin: 0;
+	padding: 80px 0 15px 0;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) {	
+
+	#nav-mobile {
+		top: 0;
+		width: 50%;
+	}
+
+	/*.navbar-toggle.open  {
+		.icon-menu {
+			color: $color-blue-black !important;
+		}
+		background-color: $color-grey-light;
+	}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-desktop {
+	display: none;
+	clear: left;
+	position: relative;
+	font-size: 14px;
+}
+
+#nav-desktop .wd-nav-01 {
+	padding-top: $padding-base;
+}
+
+#nav-desktop .wd-nav-01 > li {
+	display: inline-block;
+	margin: 0 15px 0 0;	
+	position: relative;
+	padding-bottom: 10px;
+}
+
+#nav-desktop .wd-nav-01 li.visible .wd-nav-02 {
+	display: block;
+}
+
+#nav-desktop .wd-nav-01 li a {
+	text-transform: uppercase;
+	color: $color-white;
+	text-decoration: none;	
+}
+
+#nav-desktop .wd-nav-01 li:hover > a {
+	color: $color-red;
+}
+
+#nav-desktop .wd-nav-01 li.sub span.arrow {	
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 20px;
+	width: 10px;
+	margin: auto;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .2s .2s; /* For Safari 3.1 to 6.0 */
+    transition: all .2s .2s;
+    &.visible {
+    	visibility: visible;
+		opacity: 1;
+    }
+}
+
+#nav-desktop .wd-nav-01 li.sub span.arrow:before {
+	content: "";
+	position: absolute;
+	left: -5px;
+	top: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+#nav-desktop .wd-nav-01 > li.visible > a, #nav-desktop .wd-nav-01 > li.active > a {
+	color: $color-red;
+}
+
+#nav-desktop .wd-nav-02 {
+	padding: $padding-xs 0;
+	position: absolute;
+	min-width: 250px;
+	opacity: 0;
+	visibility: hidden;
+	left: -$padding-base;
+	top: 30px;
+	background-color: $color-white;
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+	-webkit-transition: all .2s .2s; /* For Safari 3.1 to 6.0 */
+    transition: all .2s .2s;
+	&.visible {
+		visibility: visible;
+		opacity: 1;
+	}	
+}
+
+#nav-desktop .wd-nav-02 li {
+	margin: 0;
+	display: block;
+	position: static;
+}
+
+#nav-desktop .wd-nav-02 li a {
+	padding: $padding-xs $padding-base;
+	margin: 0;
+	color: $color-blue-dark;
+	text-transform: none;
+	display: block;
+	font-size: $font-size-sm;
+	position: relative;
+	white-space: nowrap;
+}
+
+#nav-desktop .wd-nav-02 > li.sub > a:after {
+	content: "\e607";
+	position: absolute;
+	right: 5px;
+	font-size: 18px;
+	top: 10px;
+	height: 18px;
+	color: $color-grey-blue-two;
+
+	font-family: 'wirecard-nav';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#nav-desktop .wd-nav-02 li.active > a, #nav-desktop .wd-nav-02 li:hover > a {
+	color: $color-blue-black;
+	background-color: $color-grey-light;
+	font-weight: $font-weight-bold;
+}
+
+#nav-desktop .wd-nav-02 li:hover a:after {
+	color: $color-blue-black;
+}
+
+#nav-desktop .wd-nav-03, #nav-desktop .wd-nav-04 {
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	min-height: 100%;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	min-width: 250px;
+	background-color: $color-grey-light;
+	left: 100%;
+	top: 0;
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+	&.visible {
+		display: block;
+	}
+}
+
+#nav-desktop .wd-nav-03 li {
+	display: block;
+	&:last-child {
+		margin-bottom: $padding-base;
+	}
+}
+
+#nav-desktop .wd-nav-03 li a {
+	padding: 1px $padding-base;
+	position: relative;
+}
+
+#nav-desktop .wd-nav-03 li:hover > a {
+	background-color: $color-white;
+	font-weight: normal;
+}
+
+#nav-desktop .wd-nav-03 span.title {
+	font-weight: $font-weight-bold;
+	padding: 16px $padding-base $padding-base;
+	display: block;
+	color: $color-blue-dark;
+}
+
+#nav-desktop .wd-nav-03 > li.sub > a:after {
+	content: "\e607";
+	position: absolute;
+	right: 5px;
+	font-size: 18px;
+	top: 3px;
+	height: 18px;
+
+	font-family: 'wirecard-nav';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

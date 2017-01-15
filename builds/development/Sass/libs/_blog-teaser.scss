@@ -1,0 +1,42 @@
+.wd__blogTeaserSectionModule {
+	color: $color-white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.title {
+		font-size: 28px;
+		span {
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+	}
+	.headline {
+		font-size: 34px;
+		font-weight: 300;
+		line-height: 1.1;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+.wd__blogTeaserSectionModule {
+	.title {
+		margin-bottom: $padding-xlg;
+	}
+	.headline {
+		font-size: 52px;
+	}
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+.wd__blogTeaserSectionModule {
+	.headline {
+		font-size: 64px;
+	}
+}
+
+}

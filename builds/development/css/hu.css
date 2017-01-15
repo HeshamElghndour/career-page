@@ -1,0 +1,27 @@
+.footer__copy {
+	width:22em;
+}
+@media screen and (min-width: 600px) {
+	.footer__copy {
+		width:24.5em;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.footer__copy {
+		width:22em;
+	}
+}
+.footer__copy span {
+	background-image:url("../images/wd_siegel_at.png");
+	padding:5em 0 0;
+}
+/*** RETINA ***/
+@media only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-Webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	.footer__copy span {
+		background-image:url("../images/wd_siegel_at-2x.png");
+		background-size: 285px 47px;
+	}
+}

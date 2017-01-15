@@ -1,0 +1,33 @@
+@import "bootstrap/bootstrap.less";
+
+@import "variables.less";
+@import "mixins.less";
+
+/* Librarys */
+@import "libs/iosslider.less";
+@import "libs/responsive-tabs.less";
+@import "libs/responsive-columns.less";
+@import "libs/wirecard-icons.less";
+@import "libs/nav.less";
+@import "libs/full-size-image-content-slider.less";
+@import "libs/expert-articles.less";
+
+/* Extra small devices (up to 768px) */
+@import "main-screen-xs.less";
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+	@import "main-screen-sm.less";
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+	@import "main-screen-md.less";
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+	@import "main-screen-lg.less";
+}
+
+@import "overwrites.less";

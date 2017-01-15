@@ -1,0 +1,8 @@
+ /* RTE */
+
+/* content of rte_formats.css */
+/* span. needed for RTE.default.classesCharacter */
+/* p.    needed for RTE.default.classesParagraph */
+span.intro-text, p.intro-text{ color: #888888; }
+span.info-text, p.info-text{ color: #888888; }
+span.tel, p.tel{ color: #888888; }
