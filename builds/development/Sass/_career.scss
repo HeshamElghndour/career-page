@@ -23,11 +23,13 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 }
 
 
-.wd__stageSliderModule .slider .slide{
-	min-height: 675px;
+.wd__stageSliderModule{
+	min-height: 760px !important;
+	overflow: hidden;
 }
 .career-header{
 	text-align: center;
+
 	.video_bg{
 		video{
 			width: 100%;
@@ -38,7 +40,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 99%;
 			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
@@ -83,66 +85,71 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			 transition-duration: .6s;
 			 transition-timing-function: ease;
 			letter-spacing: 0;
-			.btn-2 {
-			}
+			// &:hover,
+			// &:active {
+			//   letter-spacing: 5px;
+			// }
 
-			&:hover,
-			&:active {
-			  letter-spacing: 5px;
-			}
+			// &:after,
+			// &:before {
+			//   backface-visibility: hidden;
+			//   border: 1px solid rgba(#fff, 0);
+			//   bottom: 0px;
+			//   content: " ";
+			//   display: block;
+			//   margin: 0 auto;
+			//   position: relative;
+			//   transition: all 280ms ease-in-out;
+			//   width: 0;
+			// }
 
-			&:after,
-			&:before {
-			  backface-visibility: hidden;
-			  border: 1px solid rgba(#fff, 0);
-			  bottom: 0px;
-			  content: " ";
-			  display: block;
-			  margin: 0 auto;
-			  position: relative;
-			  transition: all 280ms ease-in-out;
-			  width: 0;
-			}
+			// &:hover:after,
+			// &:hover:before {
+			//   backface-visibility: hidden;
+			//   border-color: #fff;
+			//   transition: width 350ms ease-in-out;
+			//   width: 70%;
+			// }
 
-			&:hover:after,
-			&:hover:before {
-			  backface-visibility: hidden;
-			  border-color: #fff;
-			  transition: width 350ms ease-in-out;
-			  width: 70%;
-			}
-
-			&:hover:before {
-			  bottom: auto;
-			  top: 0;
-			  width: 70%;
-			}
+			// &:hover:before {
+			//   bottom: auto;
+			//   top: 0;
+			//   width: 70%;
+			// }
 
 			/////////////////////////////
 		}
 	}
 	figure .card-content{
 		width: 100%;
-    height: 214px;
-    float: left;
-    background-size: cover !important;
-    display: table;
-    position: relative;
+	    height: 214px;
+	    float: left;
+	    display: table;
+	    position: relative;
+		background-size: 100%;
+	    background-position: center center;
+    	-webkit-transition: all 0.3s ease;
+    	transition: all 0.3s ease;
+    	-webkit-transform-origin: center center;
+    	transform-origin: center center;
 		// loop for each dep tile setting bg
 		$departments: marketing it sales customer adminstration students dep1 dep2;
 		@each $a in $departments{
 			&.dep-#{$a}{
-				background: url('../images/#{$a}_tile_bg.jpg');
+				background-image: url('../images/#{$a}_tile_bg.jpg');
 			}
-	  }
+	  	}
+	  	&:hover{
+	  		background-size: 130%;
+	  	}
 		h2{
 			text-transform: uppercase;
 			text-align: center;
 			color: white;
 			display: table-cell;
-	    vertical-align: middle;
+	    	vertical-align: middle;
 			z-index: 1;
-	    position: relative;
+	    	position: relative;
 			font-size: 22px;
 		}
 		.gradient{
@@ -247,6 +254,35 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 
 	.hr-team{
 		padding: 0 !important;
+		.per{
+			position: absolute;
+			display: inline-block;
+			background: yellow;
+			width: 170px;
+			height: 228px;
+			opacity: 0;
+		}
+		.per-1{
+			top: 22%;
+			left: 16%;
+		}
+		.per-2{
+			top: 7%;
+			left: 29%;
+		}
+		.per-3{
+			top: 16%;
+			left: 40%;
+
+		}
+		.per-4{
+			top: 23%;
+			left: 54%;
+		}
+		.per-5{
+			top: 17%;
+			left: 71%;
+		}
 	}
 	footer{
 

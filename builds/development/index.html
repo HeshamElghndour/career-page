@@ -66,8 +66,8 @@
 
   <body>
 
-
-    <nav id="nav-mobile" class="visible-xs visible-sm open" role="navigation" style="height: 3793px;">
+	<!-- mobile nav -->
+    <nav id="nav-mobile" class="visible-xs visible-sm " role="navigation" style="height: 3793px;">
 			<div class="wd__SearchAndLang mobile">
 
 
@@ -1190,9 +1190,9 @@
 					<div class="slider">
 
 							<div class="slide wd__sliderFontColorLight career-header"
-              style="background-image:url(images/header_bg.jpg); background-position: center center;"
+              style="background-color:#F7F7F8"
               >
-                <div class="video_bg">
+                <div class="video_bg" style="background-color:#F7F7F8">
                   <div class="video-overlay">
 
                   </div>
@@ -1500,6 +1500,11 @@
       <!-- END SOCIAL HR -->
       <!-- HR TEAM -->
       <section class="hr-team">
+      	<span class="per per-1" data-toggle="tooltip" data-placement="top" title="person name1"></span>
+      	<span class="per per-2" data-toggle="tooltip" data-placement="top" title="person name2"></span>
+      	<span class="per per-3" data-toggle="tooltip" data-placement="top" title="person name3"></span>
+      	<span class="per per-4" data-toggle="tooltip" data-placement="top" title="person name4"></span>
+      	<span class="per per-5" data-toggle="tooltip" data-placement="top" title="person name5"></span>
         <img style="width: 100%" src="images/hr-team.jpg" alt=""/>
       </section>
       <!-- END HR TEAM -->
@@ -1670,5 +1675,10 @@
     <script src="js/map-custom.js"></script>
 
     <script src="js/main.js"></script>
+    <script>
+    	$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+    </script>
   </body>
 </html>
