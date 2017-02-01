@@ -71,7 +71,14 @@ $(function(){
 
   });
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiperMap = new Swiper('.swiper-map', {
+    direction: 'horizontal',
+    nextButton: false,
+    prevButton: false,
+
+  });
+
+  var swiperEvents = new Swiper('.swiper-events', {
     direction: 'horizontal',
     nextButton: false,
     prevButton: false,
