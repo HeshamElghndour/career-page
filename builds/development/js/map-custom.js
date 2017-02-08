@@ -8,12 +8,22 @@ $(function(){
     zoomOnScroll: false,
     zoomButtons : false,
     backgroundColor: '#fff',
+
     regionStyle: {
-      initial: { fill: '#E8E9E9' },
-      selected: { fill: '#B0013A' }
+      initial: {
+        fill: '#E8E9E9',
+        "stroke-width" : 0.0,
+        "fill-opacity": 1,
+        stroke: "#E8E9E9",
+        "stroke-width": 0.2,
+        "stroke-opacity": 1
+      },
+      selected: {
+        fill: '#B0013A'
+      },
+
     },
     hover: {
-      hoverColor: '#0071A4',
       cursor: 'pointer'
     },
 
@@ -21,8 +31,15 @@ $(function(){
       initial: {
         fill: '#EF4023',
         stroke: '#F69180',
+        r: 8,
         "stroke-width": 5
+      },
+      hover: {
+        fill: '#EF4023',
+        stroke: '#F69180',
+        "stroke-width": 8
       }
+
     },
     onMarkerClick: function(e, code) {
       var map = $('#vmap').vectorMap('get', 'mapObject');
@@ -34,12 +51,16 @@ $(function(){
       })
 
       customTipRegion.html(map.tip.text());
-      customTip.show();
+      customTip.show().addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        function(){
+          $(this).removeClass('animated fadeInDown');
+        });
       customTipRegion.append(map.getRegionName(code));
 
     },
     onRegionTipShow: function (e, tip, code) {
         e.preventDefault();
+        // console.log(e);
 
     },
     onRegionClick: function (e, code){
@@ -66,22 +87,73 @@ $(function(){
 
   var left,top;
   $('#vmap').vectorMap('get', 'mapObject').container.mousemove(function(e){
-    left = e.clientX-220;
-    top = e.clientY-200;
+    // console.log(e);
+    left = e.offsetX+175;
+    top = e.offsetY+20;
 
   });
 
   var swiperMap = new Swiper('.swiper-map', {
-    direction: 'horizontal',
-    nextButton: false,
-    prevButton: false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    loop: true,
 
   });
 
   var swiperEvents = new Swiper('.swiper-events', {
-    direction: 'horizontal',
-    nextButton: false,
-    prevButton: false,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 3,
+    paginationClickable: true,
+    spaceBetween: 30,
+    loop: true,
+    breakpoints: {
+
+       992: {
+           slidesPerView: 2,
+           spaceBetween: 30
+       },
+       640: {
+           slidesPerView: 2,
+           spaceBetween: 20
+       },
+       480: {
+           slidesPerView: 1,
+           spaceBetween: 10
+       }
+    }
+
+  });
+
+  var swiperEvents = new Swiper('.swiper-hr', {
+     nextButton: '.swiper-button-next',
+     prevButton: '.swiper-button-prev',
+     slidesPerView: 4,
+     paginationClickable: true,
+     spaceBetween: 30,
+     loop: true,
+     breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        }
+     }
+
 
   });
 

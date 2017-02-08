@@ -30,23 +30,32 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 .career-header{
 	text-align: center;
 
+	.overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 99%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 	.video_bg{
 		video{
 			width: 100%;
 
 		}
-		.video-overlay{
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 99%;
-			background-color: rgba(0, 0, 0, 0.5);
+	}
+	@media #{$tablet}{
+		.wd__contentSliderContent{
+			background: url('../images/working/Work-Life-Balance.jpg');
+			background-size: cover;
 		}
 	}
 	.header-slide{
 		h1{
 			font-size: 70px;
+			@media #{$tablet} {
+				font-size: 20px;
+			}
 			text-transform: inherit;
 			margin: 80px 0 40px 0;
 		}
@@ -85,39 +94,6 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			 transition-duration: .6s;
 			 transition-timing-function: ease;
 			letter-spacing: 0;
-			// &:hover,
-			// &:active {
-			//   letter-spacing: 5px;
-			// }
-
-			// &:after,
-			// &:before {
-			//   backface-visibility: hidden;
-			//   border: 1px solid rgba(#fff, 0);
-			//   bottom: 0px;
-			//   content: " ";
-			//   display: block;
-			//   margin: 0 auto;
-			//   position: relative;
-			//   transition: all 280ms ease-in-out;
-			//   width: 0;
-			// }
-
-			// &:hover:after,
-			// &:hover:before {
-			//   backface-visibility: hidden;
-			//   border-color: #fff;
-			//   transition: width 350ms ease-in-out;
-			//   width: 70%;
-			// }
-
-			// &:hover:before {
-			//   bottom: auto;
-			//   top: 0;
-			//   width: 70%;
-			// }
-
-			/////////////////////////////
 		}
 	}
 	figure .card-content{
@@ -195,6 +171,9 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 	}
 
 	.events{
+		.container{
+			position: relative;
+		}
 		.event-card{
 			&:hover{
 		    background: #F7F7F8;
@@ -245,77 +224,114 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			text-decoration: none;
 		}
 		*{
-			// color: #fff;
 			text-transform: inherit;
 		}
+	}
 
-
+	.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+		right: -30px;
+	}
+	.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+		left: -20px;
+	}
+	.swiper-button-next, .swiper-button-prev{
+		top: 56%;
+	}
+	@media (max-width: $screen-md-min){
+			.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+				right: 0px;
+			}
+			.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+				left: 0px;
+			}
 	}
 
 	.hr-team{
-		padding: 0 !important;
-		.per{
-			position: absolute;
-			display: inline-block;
-			background: yellow;
-			width: 170px;
-			height: 228px;
-			opacity: 0;
+		h1{
+			text-transform: inherit;
 		}
-		.per-1{
-			top: 22%;
-			left: 16%;
+		.container{
+			position: relative;
 		}
-		.per-2{
-			top: 7%;
-			left: 29%;
+		.swiper-container{
+			padding: 10px;
 		}
-		.per-3{
-			top: 16%;
-			left: 40%;
+		.swiper-hr-team{
+			width: 100%;
+		}
+		img{
+			margin-bottom: 10px;
+			width: 100%;
+		}
+		p{
+			margin-bottom: 0;
+		}
 
-		}
-		.per-4{
-			top: 23%;
-			left: 54%;
-		}
-		.per-5{
-			top: 17%;
-			left: 71%;
-		}
 	}
 	footer{
 
+	}
+	.swiper-button-prev, .swiper-button-next{
+		background: none !important;
+	}
+	.swiper-button-prev:after, .swiper-button-next:after{
+		content: " ";
+		position: absolute;
+		width: 1em;
+		height: 1em;
+		border-left: 2px solid #052C4B;
+		border-bottom: 2px solid #052C4B;
+	}
+	.swiper-button-prev:after{
+		transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+
+		@media #{$tablet}{
+			right: 0;
+		}
+	}
+	.swiper-button-next:after{
+		transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		border-left: 0;
+		border-right: 2px solid #052C4B;
+
+		@media #{$tablet}{
+			left: 0;
+		}
 	}
 	.jvectormap-tip{
 		background-color: #F9F9F9;
 		color: #231F20;
 		padding: 0;
-		.swiper-button-prev, .swiper-button-next{
-			background: none !important;
-		}
-		.swiper-button-prev:after, .swiper-button-next:after{
-			content: " ";
-			position: absolute;
-			width: 1em;
-			height: 1em;
-			border-left: 2px solid #052C4B;
-			border-bottom: 2px solid #052C4B;
-		}
-		.swiper-button-prev:after{
-			transform: rotate(45deg);
-			-moz-transform: rotate(45deg);
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-		}
-		.swiper-button-next:after{
-			transform: rotate(-45deg);
-	    -moz-transform: rotate(-45deg);
-	    -webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-			border-left: 0;
-    	border-right: 2px solid #052C4B;
-		}
+		animation-duration: 0.3s;
+		// &:after, &:before {
+		// 	top: 100%;
+		// 	left: 50%;
+		// 	border: solid transparent;
+		// 	content: " ";
+		// 	height: 0;
+		// 	width: 0;
+		// 	position: absolute;
+		// 	pointer-events: none;
+		// }
+		//
+		// &:after {
+		// 	border-color: rgba(249, 249, 249, 0);
+		// 	border-top-color: #F9F9F9;
+		// 	border-width: 10px;
+		// 	margin-left: -10px;
+		// }
+		// &:before {
+		// 	border-color: rgba(205, 205, 205, 0);
+		// 	border-top-color: #CDCDCD;
+		// 	border-width: 11px;
+		// 	margin-left: -11px;
+		// }
 		img{
 			margin-right: 10px;
 		}
@@ -326,7 +342,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 		.swiper-container {
       width: 465px;
       height: 166px;
-      margin: 20px auto;
+      margin: 20px auto 0px auto;
     }
 
 
@@ -339,6 +355,32 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 						padding: 6px 10px;
 					}
 	    }
+
+		@media (max-width: $screen-sm-max){
+			display: block;
+			position: relative;
+			background-color: transparent;
+			border: 0;
+			padding: 20px;
+			&:before, &:after{
+				display: none;
+			}
+			img{
+				margin-right: 20px;
+    		width: 50%;
+			}
+			h4{
+				font-size: 20px;
+			}
+			address{
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+			.swiper-container{
+				width: 100%;
+			}
+
+		}
 
 	}
 
@@ -356,26 +398,3 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 .wd__contentSliderText{
 	padding-top: 30px !important;
 }
-
-// .benifits-section {
-// 	.wd__FeatureTiles--Item{
-// 		padding: 0;
-// 		margin-bottom: 0;
-// 		height: 258px;
-// 		overflow: hidden;
-// 	}
-// 	a{
-// 			display: inline-block;
-// 			position: relative;
-// 	}
-// 	p{
-// 		position: absolute;
-//     color: #fff;
-//     top: 105px;
-//     display: block;
-//     width: 100%;
-//     text-align: center;
-//     text-decoration: underline;
-// 		font-size: 20px;
-// 	}
-// }

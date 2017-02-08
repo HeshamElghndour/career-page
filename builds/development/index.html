@@ -1178,10 +1178,8 @@
 							<div class="slide wd__sliderFontColorLight career-header"
               style="background-color:#F7F7F8"
               >
-                <div class="video_bg" style="background-color:#F7F7F8">
-                  <div class="video-overlay">
-
-                  </div>
+                <div class="video_bg hidden-sm hidden-xs" style="background-color:#F7F7F8">
+                  <div class="overlay"></div>
                   <video autoplay loop>
                     <source src="video/header.mp4" type="video/mp4">
                     <source src="video/header.mp4" type="video/ogg">
@@ -1189,6 +1187,7 @@
                   </video>
                 </div>
 								<div class="wd__contentSliderContent middle">
+                  <div class="overlay"></div>
 									<div class="wd__contentSliderContentInner" >
 										<div class="container">
 											<div class="row">
@@ -1198,7 +1197,7 @@
                             <h1>Willkommen, wo Menschen und
                               <br>
                               FinTech zuhause sind.</h1>
-                            <p>
+                            <p class="hidden-xs">
                               Bereit für eine neue Herausforderung? Hier finden Sie unsere aktuellen Jobangebote
                             </p>
                             <div class="row">
@@ -1250,14 +1249,14 @@
             Wirecard ist weltweit an zahlreichen Standorten vertreten. Hier finden Sie einen Überblick über die beruflichen Möglichkeiten, die Ihnen offen stehen. Ob im deutschsprachigen Raum oder in anderen Teilen der Wirecard Welt. Per Mausklick kommen Sie direkt zur Karriereseite des Landes Ihrer Wahl.
           </p>
           <div class="map-wrapper">
-            <div id="vmap" style="width: 100%; height: 600px;"></div>
+            <div id="vmap" style="width: 100%; height: 600px;" class="hidden-sm hidden-xs"></div>
             <div id="customTip" class="jvectormap-tip">
               <div class="swiper-container swiper-map">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img class="pull-left" src="images/ascheime-office.jpg" alt=""/>
                     <div class="pull-left">
-                      <h4></h4>
+                      <h4>Aschheime</h4>
                       <address>
                         Wirecard AG, Einstein Ring 35
                         <br>
@@ -1309,6 +1308,19 @@
               </div>
             </div>
           </div>
+          <div class="visible-sm visible-xs">
+            <div class="swiper-container swiper-locations">
+              <div class="swiper-wrapper row">
+                <div class="swiper-slide col-sm-6">
+
+                </div>
+                <div class="swiper-slide col-sm-6">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- END MAP -->
@@ -1321,40 +1333,40 @@
             Unser Produkt- und Leistungsspektrum ist ebenso vielfältig, wie Ihre Möglichkeiten, mit uns Ihre Karriere voranzutreiben. Ob im Bereich IT oder Sales, Marketing oder im Finance – wir bieten Ihnen ein Spektrum an interessanten Aufgaben und neuen Herausforderungen in Kombination mit einer inspirierenden Arbeitskultur.
           </p>
           <div class="row">
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-it">
                 <h2>IT &amp; Technology</h2>
                 <span class="gradient"></span>
               </a>
             </figure>
 
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-adminstration">
                 <h2>Corporate Operations &amp; <br>Human Resources</h2>
                 <span class="gradient"></span>
               </a>
             </figure>
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-sales">
                 <h2>Sales</h2>
                 <span class="gradient"></span>
               </a>
             </figure>
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-marketing">
                 <h2>Marketing &amp; <br>Corporate Communications</h2>
                 <span class="gradient"></span>
               </a>
             </figure>
 
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-finanzen">
                 <h2>Finance &amp;<br> Wirecard Bank</h2>
                 <span class="gradient"></span>
               </a>
             </figure>
 
-            <figure class="col-md-4 card">
+            <figure class="col-md-4 col-sm-6 col-xs-12 card">
               <a href="#" class="card-content dep-customer">
                 <h2>Customer Service</h2>
                 <span class="gradient"></span>
@@ -1366,20 +1378,6 @@
       </section>
       <!-- END DEPARTMENTS -->
 
-      <!-- VIDEO -->
-      <!-- <section class="video">
-
-        <div class="container">
-          <h2 class="text-center">Karriere bei Wirecard</h2>
-          <p class="text-center">
-            Wirecard bietet beste Voraussetzungen für alle, die gerne mehr erreichen. Als international tätiges Technologieunternehmen sind das Können und das Engagement unserer Mitarbeiter für uns schließlich von entscheidender Bedeutung. Darum suchen wir nicht nur die besten Köpfe, sondern schaffen auch ein Umfeld, in dem diese sich entfalten können. Flache Hierarchien, ein dynamisches und interkulturelles Umfeld und ein kollegiales Miteinander sind uns wichtig. Ihnen auch? Willkommen bei Wirecard
-          </p>
-            <img style="width:100%; height: auto" src="images/video_bg.jpg" width="1100" height="550" alt=""/>
-
-        </div>
-
-      </section> -->
-      <!-- END VIDEO -->
 
       <!-- EVENTS -->
       <section class="events">
@@ -1388,8 +1386,8 @@
           <p class="text-center">
             Sie sind bereit für den Karrierestart oder wollen bei uns Ihren nächsten Karriereschritt machen? Dann lernen Sie uns doch kennen. Hier finden Sie alle Karriere Events bei denen wir vor Ort vertreten sind. Wie freuen uns auf Sie!
           </p>
-          <div class="row swiper-container swiper-events">
-
+          <div class="swiper-container swiper-events">
+            <div class="swiper-wrapper">
                 <div class="col-xs-12 col-md-4 event-card swiper-slide">
                   <a href="#">
                     <img class="event-photo pull-left" src="images/event-card.jpg" alt=""/>
@@ -1420,8 +1418,40 @@
                     </p>
                   </a>
                 </div>
-
+                <div class="col-xs-12 col-md-4 event-card swiper-slide">
+                  <a href="#">
+                    <img class="event-photo pull-left" src="images/event-card.jpg" alt=""/>
+                    <h4 class="text-center">Event title added here</h4>
+                    <!-- <span class="date">1st December 2016</span> -->
+                    <p class="text-center">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s…
+                    </p>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-md-4 event-card swiper-slide">
+                  <a href="#">
+                    <img class="event-photo pull-left" src="images/event-card.jpg" alt=""/>
+                    <h4 class="text-center">Event title added here</h4>
+                    <!-- <span class="date">1st December 2016</span> -->
+                    <p class="text-center">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s…
+                    </p>
+                  </a>
+                </div>
+                <div class="col-xs-12 col-md-4 event-card swiper-slide">
+                  <a href="#">
+                    <img class="event-photo pull-left" src="images/event-card.jpg" alt=""/>
+                    <h4 class="text-center">Event title added here</h4>
+                    <!-- <span class="date">1st December 2016</span> -->
+                    <p class="text-center">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s…
+                    </p>
+                  </a>
+                </div>
+            </div>
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
 
       </section>
@@ -1442,17 +1472,6 @@
 				</div>
 			</div>
 		  </section>
-
-      <!-- <section class="newsletters">
-        <div class="container">
-          <h1>Nehmen Sie an unseren Newsletter teil
-            <a href="#">hier</a>
-          </h1>
-        </div>
-      </section> -->
-      <!-- END NEWSLETTERS -->
-      <!-- try section -->
-      <!-- try section -->
 
 
       <!-- SOCIAL HR -->
@@ -1491,14 +1510,83 @@
         </div>
       </section>
       <!-- END SOCIAL HR -->
+
       <!-- HR TEAM -->
       <section class="hr-team">
-      	<span class="per per-1" data-toggle="tooltip" data-placement="top" title="person name1"></span>
-      	<span class="per per-2" data-toggle="tooltip" data-placement="top" title="person name2"></span>
-      	<span class="per per-3" data-toggle="tooltip" data-placement="top" title="person name3"></span>
-      	<span class="per per-4" data-toggle="tooltip" data-placement="top" title="person name4"></span>
-      	<span class="per per-5" data-toggle="tooltip" data-placement="top" title="person name5"></span>
-        <img style="width: 100%" src="images/hr-team.jpg" alt=""/>
+
+        <!-- Slider main container -->
+        <div class="container">
+          <h1 class="text-center">Unser Team ist für Sie da</h1>
+
+          <div class="swiper-container swiper-hr">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img src="images/hr-photo.jpg" alt="" />
+                    <p class="text-center">John Doe</p>
+                    <p class="text-center">Human Resources Manager</p>
+                    <p class="text-center"> john.doe@wirecard.com</p>
+                  </figure>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
       </section>
       <!-- END HR TEAM -->
 
@@ -1660,7 +1748,8 @@
     <script src="https://www.wirecard.com/typo3conf/ext/ne_cookieinfo/Resources/Public/jquery.cookieInfo.js?1448454211" type="text/javascript"></script>
     <script src="https://www.wirecard.com/typo3conf/ext/ne_flibs/Resources/Public/scripts.js?1392725862" type="text/javascript"></script>
     <script src="https://www.wirecard.com/typo3conf/ext/ne_form_builder/Resources/Public/Scripts/FrontendSession.js?1447317566" type="text/javascript"></script>
-    <script src="js/vendor/swiper/dist/js/swiper.min.js"></script>
+    <!-- <script src="js/vendor/swiper/dist/js/swiper.min.js"></script> -->
+    <script src="js/vendor/swiper/dist/js/swiper.jquery.min.js"></script>
 
     <!-- MAP -->
     <script src="js/vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
@@ -1668,10 +1757,6 @@
     <script src="js/map-custom.js"></script>
 
     <script src="js/main.js"></script>
-    <script>
-    	$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		})
-    </script>
+
   </body>
 </html>

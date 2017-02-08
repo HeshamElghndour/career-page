@@ -10,5 +10,8 @@
   "devDependencies": {
     "bootstrap-sass": "~3.3.4",
     "jquery": "~2.1.4"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2"
   }
 }
