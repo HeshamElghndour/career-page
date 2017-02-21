@@ -86,6 +86,16 @@
 .grid figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
+	opacity: 1;
+		text-align: center;
+		img.icon{
+			width: 100px;
+			max-height: 60px;
+			margin: 8px auto 0 auto;
+			opacity: 1;
+
+		}
+
 }
 
 /***** Layla *****/
@@ -169,6 +179,7 @@ figure.effect-layla:hover img {
       max-width: 440px;
       margin: 0 auto;
       float: none;
+
     }
     img{
       margin: 0 auto;
