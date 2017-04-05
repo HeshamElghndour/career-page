@@ -28,10 +28,8 @@
 
 .grid figure img {
 	position: relative;
-	display: block;
 	min-height: 100%;
-	width: 100%;
-	opacity: 0.8;
+	width: 35%;
 }
 
 .grid figure figcaption {
@@ -85,7 +83,7 @@
 
 .grid figure p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	font-size: 92.5%;
 	opacity: 1;
 		text-align: center;
 		img.icon{
@@ -142,7 +140,7 @@ figure.effect-layla p {
 }
 
 figure.effect-layla:hover img {
-	opacity: 0.4;
+	// opacity: 0.4;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }

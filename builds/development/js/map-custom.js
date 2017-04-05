@@ -51,6 +51,7 @@ $(function(){
       })
 
       customTipRegion.html(map.tip.text());
+      // animate customtip
       customTip.show().addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
         function(){
           $(this).removeClass('animated fadeInDown');
@@ -84,14 +85,30 @@ $(function(){
       {latLng: [-40.900557,	174.885971	], name: 'NEW ZEALAND'}
     ]
   });
+  $(document).click(function(e){
+    if ($(e.target).not(':has(#customTip)').length == 0) {
+        // current click target is not the tooltip and a tip is open
+        $('#customTip').hide();
+      }
+  }); 
+
+
 
   var left,top;
   $('#vmap').vectorMap('get', 'mapObject').container.mousemove(function(e){
     // console.log(e);
-    left = e.offsetX+175;
-    top = e.offsetY+20;
+    var $div = $('.map-wrapper');
+    var offset = $div.offset();
+    if( ($(window).width() < 1500) && (e.clientX > 930) ){
+      left = e.offsetX-447;
+    }else{
 
+      left = (e.clientX - offset.left) - 230;
+    }
+    top = e.offsetY - 192;
+    console.log(e.clientX)
   });
+
 
   var swiperMap = new Swiper('.swiper-map', {
     nextButton: '.swiper-button-next',
@@ -108,7 +125,7 @@ $(function(){
     prevButton: '.swiper-button-prev',
     slidesPerView: 3,
     paginationClickable: true,
-    spaceBetween: 30,
+    // spaceBetween: 30,
     loop: true,
     breakpoints: {
 

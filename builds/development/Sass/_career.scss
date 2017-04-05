@@ -35,7 +35,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 99%;
+		height: 99.5%;
 		background-color: rgba(0, 0, 0, 0.5);
 	}
 	.video_bg{
@@ -72,20 +72,20 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 	text-align: center;
 
 }
-.careers-page{
-	section{
-		padding: 80px 0;
-		position: relative;
-		&.video{
-			background-color: $color-grey-light;
-		}
-	}
+
+	// section{
+	// 	padding: 80px 0;
+	// 	position: relative;
+	// 	&.video{
+	// 		background-color: $color-grey-light;
+	// 	}
+	// }
 
 	figure.card{
 		padding: 0 10px;
 		margin-bottom: 20px;
 		a{
-			text-decoration: none;
+			text-decoration: none;ca
 		}
 		h2{
 			text-decoration: none;
@@ -271,6 +271,12 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 	footer{
 
 	}
+
+	.map-wrapper{
+		position: relative;
+		top: 0;
+		left:0;
+	}
 	.swiper-button-prev, .swiper-button-next{
 		background: none !important;
 	}
@@ -304,11 +310,13 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			left: 0;
 		}
 	}
-	.jvectormap-tip{
+	.jvectormap-tip, .jvectormap-tip-mobile{
 		background-color: #F9F9F9;
 		color: #231F20;
 		padding: 0;
 		animation-duration: 0.3s;
+
+		// arrow style
 		// &:after, &:before {
 		// 	top: 100%;
 		// 	left: 50%;
@@ -340,7 +348,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 			margin-bottom: 3px;
 		}
 		.swiper-container {
-      width: 465px;
+      width: 445px;
       height: 166px;
       margin: 20px auto 0px auto;
     }
@@ -349,7 +357,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 	    .swiper-slide {
 	        text-align: left;
 	        font-size: 18px;
-					padding: 0 30px;
+					padding: 0 10px 0 30px;
 					button{
 						font-size: 13px;
 						padding: 6px 10px;
@@ -385,7 +393,7 @@ url("../fonts/DINWebPro-Ita.woff") format("woff");
 	}
 
 
-}
+
 
 
 

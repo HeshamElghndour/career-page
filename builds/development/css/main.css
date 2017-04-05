@@ -13316,18 +13316,12 @@ footer {
 .intro-txt {
   text-align: center; }
 
-.careers-page section {
-  padding: 80px 0;
-  position: relative; }
-  .careers-page section.video {
-    background-color: #F7F7F8; }
-
-.careers-page figure.card {
+figure.card {
   padding: 0 10px;
   margin-bottom: 20px; }
-  .careers-page figure.card a {
+  figure.card a {
     text-decoration: none; }
-  .careers-page figure.card h2 {
+  figure.card h2 {
     text-decoration: none;
     box-sizing: inherit;
     transition-property: all;
@@ -13335,7 +13329,7 @@ footer {
     transition-timing-function: ease;
     letter-spacing: 0; }
 
-.careers-page figure .card-content {
+figure .card-content {
   width: 100%;
   height: 239px;
   float: left;
@@ -13347,25 +13341,25 @@ footer {
   transition: all 0.3s ease;
   -webkit-transform-origin: center center;
   transform-origin: center center; }
-  .careers-page figure .card-content.dep-marketing {
+  figure .card-content.dep-marketing {
     background-image: url("../images/marketing_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-it {
+  figure .card-content.dep-it {
     background-image: url("../images/it_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-sales {
+  figure .card-content.dep-sales {
     background-image: url("../images/sales_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-customer {
+  figure .card-content.dep-customer {
     background-image: url("../images/customer_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-adminstration {
+  figure .card-content.dep-adminstration {
     background-image: url("../images/adminstration_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-finanzen {
+  figure .card-content.dep-finanzen {
     background-image: url("../images/finanzen_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-personal {
+  figure .card-content.dep-personal {
     background-image: url("../images/personal_tile_bg.jpg"); }
-  .careers-page figure .card-content.dep-recht {
+  figure .card-content.dep-recht {
     background-image: url("../images/recht_tile_bg.jpg"); }
-  .careers-page figure .card-content:hover {
+  figure .card-content:hover {
     background-size: 130%; }
-  .careers-page figure .card-content h2 {
+  figure .card-content h2 {
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -13374,7 +13368,7 @@ footer {
     z-index: 1;
     position: relative;
     font-size: 22px; }
-  .careers-page figure .card-content .gradient {
+  figure .card-content .gradient {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -13382,110 +13376,115 @@ footer {
     left: 0;
     z-index: 0;
     transition: all 0.6s ease; }
-  .careers-page figure .card-content.dep-marketing .gradient {
+  figure .card-content.dep-marketing .gradient {
     background-image: linear-gradient(146deg, #DFB36C 12%, rgba(223, 178, 107, 0.5) 88%); }
-  .careers-page figure .card-content.dep-it .gradient {
+  figure .card-content.dep-it .gradient {
     background-image: linear-gradient(137deg, #607A87 6%, rgba(95, 121, 135, 0.5) 80%); }
-  .careers-page figure .card-content.dep-sales .gradient {
+  figure .card-content.dep-sales .gradient {
     background-image: linear-gradient(142deg, #14AF96 0%, rgba(19, 175, 150, 0.5) 100%); }
-  .careers-page figure .card-content.dep-adminstration .gradient {
+  figure .card-content.dep-adminstration .gradient {
     background-image: linear-gradient(to bottom right, rgba(4, 43, 75, 0.99) 0%, rgba(4, 43, 75, 0.5) 80%); }
-  .careers-page figure .card-content.dep-finanzen .gradient {
+  figure .card-content.dep-finanzen .gradient {
     background-image: -webkit-linear-gradient(50deg, #8DC8E8 0%, rgba(141, 200, 232, 0.5) 83%); }
-  .careers-page figure .card-content.dep-customer .gradient {
+  figure .card-content.dep-customer .gradient {
     /* Bitmap: */
     background-image: linear-gradient(-138deg, #F15238 0%, rgba(241, 82, 55, 0.5) 73%); }
-  .careers-page figure .card-content.dep-sales .gradient {
+  figure .card-content.dep-sales .gradient {
     background-image: linear-gradient(142deg, #14AF96 0%, rgba(19, 175, 150, 0.5) 100%); }
-  .careers-page figure .card-content.dep-personal .gradient {
+  figure .card-content.dep-personal .gradient {
     /* shutterstock_526629694 copy: */
     background-image: linear-gradient(-137deg, #730F5F 0%, rgba(115, 15, 94, 0.54) 100%); }
-  .careers-page figure .card-content.dep-recht .gradient {
+  figure .card-content.dep-recht .gradient {
     background-image: linear-gradient(39deg, rgba(120, 9, 9, 0.5) 25%, rgba(120, 9, 9, 0.86) 100%); }
 
-.careers-page .events .container {
+.events .container {
   position: relative; }
 
-.careers-page .events .event-card:hover {
+.events .event-card:hover {
   background: #F7F7F8; }
 
-.careers-page .events a {
+.events a {
   text-decoration: none; }
 
-.careers-page .events .event-photo {
+.events .event-photo {
   margin: 0 0 15px 0;
   width: 100%; }
 
-.careers-page .events h4 {
+.events h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #4A4A4A; }
 
-.careers-page .events a {
+.events a {
   display: inline-block; }
 
-.careers-page .events span.date {
+.events span.date {
   display: inline-block;
   font-size: 14px;
   color: #4A4A4A;
   margin-bottom: 10px; }
 
-.careers-page .newsletters {
+.newsletters {
   background: url("../images/newsletters-bg.jpg") no-repeat;
   background-size: cover; }
-  .careers-page .newsletters h1, .careers-page .newsletters h1 a {
+  .newsletters h1, .newsletters h1 a {
     text-transform: inherit;
     color: #fff; }
-    .careers-page .newsletters h1 a, .careers-page .newsletters h1 a:hover, .careers-page .newsletters h1 a a, .careers-page .newsletters h1 a a:hover {
+    .newsletters h1 a, .newsletters h1 a:hover, .newsletters h1 a a, .newsletters h1 a a:hover {
       text-decoration: underline;
       font-weight: bold; }
 
-.careers-page .social-hr {
+.social-hr {
   background-color: #F7F7F8;
   padding: 60px 0; }
-  .careers-page .social-hr a {
+  .social-hr a {
     text-decoration: none; }
-  .careers-page .social-hr * {
+  .social-hr * {
     text-transform: inherit; }
 
-.careers-page .swiper-button-next, .careers-page .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   right: -30px; }
 
-.careers-page .swiper-button-prev, .careers-page .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   left: -20px; }
 
-.careers-page .swiper-button-next, .careers-page .swiper-button-prev {
+.swiper-button-next, .swiper-button-prev {
   top: 56%; }
 
 @media (max-width: 992px) {
-  .careers-page .swiper-button-next, .careers-page .swiper-container-rtl .swiper-button-prev {
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     right: 0px; }
-  .careers-page .swiper-button-prev, .careers-page .swiper-container-rtl .swiper-button-next {
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     left: 0px; } }
 
-.careers-page .hr-team h1 {
+.hr-team h1 {
   text-transform: inherit; }
 
-.careers-page .hr-team .container {
+.hr-team .container {
   position: relative; }
 
-.careers-page .hr-team .swiper-container {
+.hr-team .swiper-container {
   padding: 10px; }
 
-.careers-page .hr-team .swiper-hr-team {
+.hr-team .swiper-hr-team {
   width: 100%; }
 
-.careers-page .hr-team img {
+.hr-team img {
   margin-bottom: 10px;
   width: 100%; }
 
-.careers-page .hr-team p {
+.hr-team p {
   margin-bottom: 0; }
 
-.careers-page .swiper-button-prev, .careers-page .swiper-button-next {
+.map-wrapper {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.swiper-button-prev, .swiper-button-next {
   background: none !important; }
 
-.careers-page .swiper-button-prev:after, .careers-page .swiper-button-next:after {
+.swiper-button-prev:after, .swiper-button-next:after {
   content: " ";
   position: absolute;
   width: 1em;
@@ -13493,16 +13492,16 @@ footer {
   border-left: 2px solid #052C4B;
   border-bottom: 2px solid #052C4B; }
 
-.careers-page .swiper-button-prev:after {
+.swiper-button-prev:after {
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg); }
   @media only screen and (max-width: 992px) {
-    .careers-page .swiper-button-prev:after {
+    .swiper-button-prev:after {
       right: 0; } }
 
-.careers-page .swiper-button-next:after {
+.swiper-button-next:after {
   transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -13510,48 +13509,48 @@ footer {
   border-left: 0;
   border-right: 2px solid #052C4B; }
   @media only screen and (max-width: 992px) {
-    .careers-page .swiper-button-next:after {
+    .swiper-button-next:after {
       left: 0; } }
 
-.careers-page .jvectormap-tip {
+.jvectormap-tip, .jvectormap-tip-mobile {
   background-color: #F9F9F9;
   color: #231F20;
   padding: 0;
   animation-duration: 0.3s; }
-  .careers-page .jvectormap-tip img {
+  .jvectormap-tip img, .jvectormap-tip-mobile img {
     margin-right: 10px; }
-  .careers-page .jvectormap-tip address {
+  .jvectormap-tip address, .jvectormap-tip-mobile address {
     font-size: 13px;
     margin-bottom: 3px; }
-  .careers-page .jvectormap-tip .swiper-container {
-    width: 465px;
+  .jvectormap-tip .swiper-container, .jvectormap-tip-mobile .swiper-container {
+    width: 445px;
     height: 166px;
     margin: 20px auto 0px auto; }
-  .careers-page .jvectormap-tip .swiper-slide {
+  .jvectormap-tip .swiper-slide, .jvectormap-tip-mobile .swiper-slide {
     text-align: left;
     font-size: 18px;
-    padding: 0 30px; }
-    .careers-page .jvectormap-tip .swiper-slide button {
+    padding: 0 10px 0 30px; }
+    .jvectormap-tip .swiper-slide button, .jvectormap-tip-mobile .swiper-slide button {
       font-size: 13px;
       padding: 6px 10px; }
   @media (max-width: 991px) {
-    .careers-page .jvectormap-tip {
+    .jvectormap-tip, .jvectormap-tip-mobile {
       display: block;
       position: relative;
       background-color: transparent;
       border: 0;
       padding: 20px; }
-      .careers-page .jvectormap-tip:before, .careers-page .jvectormap-tip:after {
+      .jvectormap-tip:before, .jvectormap-tip:after, .jvectormap-tip-mobile:before, .jvectormap-tip-mobile:after {
         display: none; }
-      .careers-page .jvectormap-tip img {
+      .jvectormap-tip img, .jvectormap-tip-mobile img {
         margin-right: 20px;
         width: 50%; }
-      .careers-page .jvectormap-tip h4 {
+      .jvectormap-tip h4, .jvectormap-tip-mobile h4 {
         font-size: 20px; }
-      .careers-page .jvectormap-tip address {
+      .jvectormap-tip address, .jvectormap-tip-mobile address {
         font-size: 16px;
         margin-bottom: 10px; }
-      .careers-page .jvectormap-tip .swiper-container {
+      .jvectormap-tip .swiper-container, .jvectormap-tip-mobile .swiper-container {
         width: 100%; } }
 
 .light-gray-bg {
@@ -13586,10 +13585,8 @@ footer {
 
 .grid figure img {
   position: relative;
-  display: block;
   min-height: 100%;
-  width: 100%;
-  opacity: 0.8; }
+  width: 35%; }
 
 .grid figure figcaption {
   padding: 2em;
@@ -13635,7 +13632,7 @@ footer {
 
 .grid figure p {
   letter-spacing: 1px;
-  font-size: 68.5%;
+  font-size: 92.5%;
   opacity: 1;
   text-align: center; }
   .grid figure p img.icon {
@@ -13677,7 +13674,6 @@ figure.effect-layla p {
   transition: opacity 0.35s, transform 0.35s; }
 
 figure.effect-layla:hover img {
-  opacity: 0.4;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
