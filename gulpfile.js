@@ -32,7 +32,6 @@ gulp.task('watch', function() {
     gulp.watch('builds/development/js/**/*', ['js']);
     gulp.watch('builds/development/css/*.css', ['css']);
     gulp.watch('builds/development/sass/*.scss', ['sass']);
-    // gulp.watch('builds/development/sass/libs/*.scss', ['sass']);
     gulp.watch(['builds/development/*.html',
         'builds/development/views/*.html'
     ], ['html']);
